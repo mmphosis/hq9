@@ -1,4 +1,4 @@
-/* hq9.c -- HQ9+ Interpreter in C v0.2.1
+/* hq9.c -- HQ9+ Interpreter in C v0.2.2
   
  Mark Stock
   http://hoop-la.ca/software/contact.html
@@ -14,7 +14,7 @@
   ./hq9 99 | say -v "Cellos"
 
  For information on HQ9+ see
-  http://www.cliff.biffle.org/esoterica/hq9plus.html
+  http://www.cliffle.com/esoterica/hq9plus.html
   
  Version 0.1 implements the H, 9, Q, and + commands.
   - The return value of the program is the accumulator.
@@ -28,6 +28,7 @@
  
  Version 0.2 added options, see additional usage for details.
 	0.2.1 - renamed source from hq9+ to hq9 to play nice with URLs
+	0.2.2 - Cliff Biffle is alive! (updated old URL: http://www.cliff.biffle.org/esoterica/hq9plus.html)
  */
 
 #include <errno.h>
@@ -214,8 +215,8 @@ int main(int argc, char * argv[])
 				fprintf(stderr, "  9  Prints the complete canonical lyrics to \"99 Bottles of Beer on the Wall\"\n");
 				fprintf(stderr, "  +  Increments the accumulator.\n");
 				fprintf(stderr, "  For information on HQ9+ see\n");
-				fprintf(stderr, "      http://www.cliff.biffle.org/esoterica/hq9plus.html\n");
-				fprintf(stderr, "  Version 0.2 of this C implementation of HQ9+ is by Mark Stock.\n");
+				fprintf(stderr, "      http://www.cliffle.com/esoterica/hq9plus.html\n");
+				fprintf(stderr, "  Version 0.2.2 of this C implementation of HQ9+ is by Mark Stock.\n");
 				fprintf(stderr, "      http://hoop-la.ca/software/contact.html\n");
 				fprintf(stderr, "    - The return value of the program is the value of the accumulator\n");
 				fprintf(stderr, "      which is a %d-bit signed integer.\n", sizeof(int) * 8);
